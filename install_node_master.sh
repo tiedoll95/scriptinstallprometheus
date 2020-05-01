@@ -4,10 +4,12 @@ yum install wget -y
 systemctl stop firewalld
 systemctl disable firewalld
 sed -i --follow-symlinks 's/^SELINUX=enforcing/SELINUX=disabled/' /etc/sysconfig/selinux
+systemctl stop node_exporter
+systemctl stop prometheus
 
-userdel prometheus
 rm -rf /home/prometheus/
 
+userdel prometheus
 ### tao user prometheus 
 
 useradd -m -s /bin/bash prometheus
