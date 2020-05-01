@@ -1,4 +1,5 @@
 #!/bin/bash
+yum install wget -y
 ##remove user and prometheus_old
 systemctl stop firewalld
 systemctl disable firewalld
@@ -11,12 +12,12 @@ useradd -m -s /bin/bash prometheus
 
 sleep 1
 
-cd /home/prometheus
+cd /home/prometheus/
 wget https://github.com/prometheus/node_exporter/releases/download/v0.18.1/node_exporter-0.18.1.linux-amd64.tar.gz
 
 tar -xzvf node_exporter-0.18.1.linux-amd64.tar.gz
 
-mv node_exporter-0.18.1.linux-amd64 /home/prometheus/node_exporter
+mv node_exporter-0.18.1.linux-amd64 node_exporter
 
 cd /etc/systemd/system/
 
