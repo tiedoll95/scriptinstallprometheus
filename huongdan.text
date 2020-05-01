@@ -1,0 +1,15 @@
+cac ip node_export can monitor thi them vao file ip_node_exporter.cfg
+
+Cac node client can monitor thi chay truoc. 
+
+
+********node_client******
+chay command 
+
+./install_node_clinet.sh
+
+******node_master***
+
+vi ip_node_exporter.cfg
+./install_node_master.sh
+
