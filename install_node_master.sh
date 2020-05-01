@@ -93,6 +93,13 @@ echo 'Dang add ip cac node_exporter tu file ip_node_exporter.cfg'
 
 sleep 5
 
-./add_ip_nodeexporter.sh
+sh /root/scriptinstallprometheus/add_ip_nodeexporter.sh
+
+systemctl daemon-reload
+systemctl restart node_exporter
+systemctl enable node_exporter
+systemctl restart prometheus
+systemctl status prometheus
+
 
 echo > 'OK'
