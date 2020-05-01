@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cat ip_node_exporter.cfg | while read line
+cat /root/scriptinstallprometheus/ip_node_exporter.cfg | while read line
 do
 {
         {
