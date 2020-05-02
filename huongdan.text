@@ -1,4 +1,6 @@
-cac ip node_export can monitor thi them vao file ip_node_exporter.cfg
+thongtingmail.cfg nhap thong tin em mail ban alert
+cac ip node_export can monitor thi them vao file 
+ip_node_exporter.cfg
 
 Cac node client can monitor thi chay truoc. 
 
@@ -13,3 +15,9 @@ chay command
 vi ip_node_exporter.cfg
 ./install_node_master.sh
 
+http://ipnodemaster:3000
+
+Add datasource prometheus
+
+http:/ipnodemaster:3000d/ashboard/import
+de up load file json 
