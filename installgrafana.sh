@@ -725,8 +725,11 @@ from_name = $Tenmailmonitor
 ;enable =
 EOF
 
+
 systemctl daemon-reload
 systemctl start grafana-server
 systemctl enable grafana-server.service
 systemctl status grafana-server
+grafana-cli plugins install grafana-piechart-panel
 
+systemctl restart grafana-server
