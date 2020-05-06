@@ -28,7 +28,7 @@ Wants=network-online.target
 After=network-online.target
 [Service]
 User=prometheus
-ExecStart=/home/prometheus/node_exporter/node_exporter --config.file /home/prometheus/snmp_exporter/snmp.yml
+ExecStart=/home/prometheus/snmp_exporter/snmp_exporter --config.file /home/prometheus/snmp_exporter/snmp.yml
 [Install]
 WantedBy=default.target
 EOF
